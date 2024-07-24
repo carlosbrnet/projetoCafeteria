@@ -1,0 +1,89 @@
+:root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --background: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+}
+.section {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  transition: 0.2s linear;
+}
+body {
+  background-color: var(--background);
+  height: 200vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: var(--border);
+  background-color: var(--background);
+}
+
+#logo {
+  width: 50px;
+}
+
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  font-weight: 700;
+}
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.3rem solid #d3ad7f;
+  padding-bottom: 0.7rem;
+  font-size: 1.5rem;
+}
+.icons img {
+  margin: 1rem;
+}
+.icons img:hover {
+  width: 3rem;
+  cursor: pointer;
+}
+#home-container {
+  background-image: url(./img/background-café.jpeg);
+
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  background-size: cover;
+  height: 40rem;
+}
+h1 {
+  color: white;
+  margin-top: 13rem;
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  color: var(--main-color);
+}
+p {
+  color: white;
+  margin-top: 3rem;
+}
+#p-h1 {
+  width: 60%;
+}
